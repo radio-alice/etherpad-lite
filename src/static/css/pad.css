@@ -337,9 +337,8 @@ li[data-key='showusers'] > a #online_count {
   zoom: 1;
 }
 #myswatchbox {
-  width: 24px;
+  width: 35px;
   height: 24px;
-  margin-right: 12px;
   background: transparent;
   cursor: pointer;
   border-radius: 3rem;
