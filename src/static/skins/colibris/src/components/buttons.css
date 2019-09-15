@@ -1,6 +1,32 @@
-.btn, #mycolorpickercancel, #mycolorpickersave, #save_title button, #yui-picker-panel .button-group .yui-button button, .hyperlink-dialog>.hyperlink-save, .timeslider #editbar .buttontext,
-#importsubmitinput, #forcereconnect
-{
+:root {
+  --dg: #4fd294;
+  --mg: #2afc98;
+  --lg: #D3FFEA;
+  --dpu: #240051;
+  --mpu: #593b7c;
+  --lpu: #f3e9ff;
+  --ddb: #001d79;
+  --db: #002ebd;
+  --mb: #003eff;
+  --b: #3466ff;
+  --lb: #7f9eff;
+  --llb: #c6d4ff;
+  --dp: #ff1c8d;
+  --mp: #ff68b3;
+  --lp: #ffc7e3;
+  --y: #ffe500;
+  --ly: #fff499;
+}
+
+.btn,
+#mycolorpickercancel,
+#mycolorpickersave,
+#save_title button,
+#yui-picker-panel .button-group .yui-button button,
+.hyperlink-dialog > .hyperlink-save,
+.timeslider #editbar .buttontext,
+#importsubmitinput,
+#forcereconnect {
   margin-right: 10px;
   padding: 5px 20px;
   border-radius: 4px;
@@ -11,11 +37,17 @@
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
-  background: none;
+  background-color: var(--ly);
   top: 0;
   left: 0;
 }
 
-.btn:hover, #mycolorpickercancel:hover, #mycolorpickersave:hover, #save_title button:hover, .hyperlink-dialog>.hyperlink-save:hover, #importsubmitinput:hover, #forcereconnect:hover {
+.btn:hover,
+#mycolorpickercancel:hover,
+#mycolorpickersave:hover,
+#save_title button:hover,
+.hyperlink-dialog > .hyperlink-save:hover,
+#importsubmitinput:hover,
+#forcereconnect:hover {
   cursor: pointer;
 }

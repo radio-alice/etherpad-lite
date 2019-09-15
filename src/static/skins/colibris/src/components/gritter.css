@@ -1,12 +1,32 @@
 /* Popups at the bottom of the page to indicate when the pad expires, and others stuff */
+:root {
+  --dg: #4fd294;
+  --mg: #2afc98;
+  --lg: #D3FFEA;
+  --dpu: #240051;
+  --mpu: #593b7c;
+  --lpu: #f3e9ff;
+  --ddb: #001d79;
+  --db: #002ebd;
+  --mb: #003eff;
+  --b: #3466ff;
+  --lb: #7f9eff;
+  --llb: #c6d4ff;
+  --dp: #ff1c8d;
+  --mp: #ff68b3;
+  --lp: #ffc7e3;
+  --y: #ffe500;
+  --ly: #fff499;
+}
 
 .gritter-title {
   text-shadow: none;
 }
 
 #gritter-notice-wrapper {
-  background-color: #fff;
-  box-shadow: 0 0 0 1px rgba(99, 114, 130, 0.16), 0 8px 16px rgba(27, 39, 51, 0.08);
+  background-color: var(--y);
+  box-shadow: 0 0 0 1px rgba(99, 114, 130, 0.16),
+    0 8px 16px rgba(27, 39, 51, 0.08);
   border-radius: 3px;
   padding: 15px 20px 5px 30px;
   bottom: 50px !important;
@@ -20,8 +40,9 @@
 }
 
 .gritter-item {
-  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
-  color: #4e545b;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif !important;
+  color: var(--db);
   font-size: 12px;
   line-height: 20px;
   padding: 0;

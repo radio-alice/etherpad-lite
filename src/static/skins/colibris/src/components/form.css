@@ -1,5 +1,7 @@
-#input_title, #chatinput, .hyperlink-dialog>.hyperlink-url {
-  border: 1px solid #d2d2d2;
+#input_title,
+#chatinput,
+.hyperlink-dialog > .hyperlink-url {
+  border: 1px solid #ff1c8d;
   height: 18px;
   border-radius: 3px;
   padding: 8px 10px;

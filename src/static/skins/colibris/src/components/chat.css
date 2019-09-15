@@ -1,24 +1,42 @@
+:root {
+  --dg: #4fd294;
+  --mg: #2afc98;
+  --lg: #D3FFEA;
+  --dpu: #240051;
+  --mpu: #593b7c;
+  --lpu: #f3e9ff;
+  --ddb: #001d79;
+  --db: #002ebd;
+  --mb: #003eff;
+  --b: #3466ff;
+  --lb: #7f9eff;
+  --llb: #c6d4ff;
+  --dp: #ff1c8d;
+  --mp: #ff68b3;
+  --lp: #ffc7e3;
+  --y: #ffe500;
+  --ly: #fff499;
+}
 #chatbox {
   background: none;
   padding: 0;
   background-color: white;
   border: none;
-  box-shadow: 0 0 0 1px rgba(99, 114, 130, 0.16), 0 8px 16px rgba(27, 39, 51, 0.08);
-  width: 400px;
+  width: 100%;
   height: 300px;
   background-color: #f9f9f9 !important;
 }
 
 #chatbox.stickyChat {
-  width: 193px !important;  
+  width: 193px !important;
   border: none !important;
 }
 
-#chatbox.stickyChat.chatAndUsersChat{
+#chatbox.stickyChat.chatAndUsersChat {
   margin-top: 181px;
   box-shadow: none;
-  border-top: 1px solid #d2d2d2 !important;
-  padding: 0!important;
+  border-top: 1px solid var(--mp) !important;
+  padding: 0 !important;
 }
 
 #titlebar {
@@ -27,35 +45,39 @@
   height: 44px;
   padding: 0 7px;
   z-index: 20000;
-  border-bottom: 1px solid #d2d2d2;
+  border-bottom: 1px solid var(--mp);
 }
 
-#titlelabel, #chatlabel {
+#titlelabel,
+#chatlabel {
   text-transform: uppercase;
-  font-weight: bold;  
+  font-weight: bold;
 }
 
-#titlelabel { font-size: 16px; }
-#chatlabel { margin-right: 15px; }
+#titlelabel {
+  font-size: 16px;
+}
+#chatlabel {
+  margin-right: 15px;
+}
 
 #chattext {
   top: 45px;
-  font-size: 13px;  
+  font-size: 13px;
   bottom: 52px;
   overflow-y: auto;
   padding: 0;
   border: none;
-  border-bottom: 1px solid #cccccc;
 }
 
 .plugin-ep_author_neat #chattext {
-  padding: 10px;  
+  padding: 10px;
 }
 
-.plugin-ep_author_neat #chattext.authorColors p, 
+.plugin-ep_author_neat #chattext.authorColors p,
 .plugin-ep_author_neat #chattext.authorColors span {
   background-color: transparent !important;
-}    
+}
 
 #chattext p b {
   color: #4c4c4c;
@@ -72,11 +94,11 @@
 
 #chattext::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: #C5C5C5;
+  background-color: var(--lb);
 }
 
 #chatbox.stickyChat #chattext {
-  padding: 0px;  
+  padding: 0px;
 }
 
 #chatinputbox {
@@ -85,7 +107,7 @@
 
 #chatinput {
   width: calc(100% - 20px);
-  float: right;  
+  float: right;
 }
 
 .plugin-ep_author_neat #chatbox.stickyChat #chattext {
@@ -93,7 +115,8 @@
 }
 
 #chaticon {
-  box-shadow: 0 0 0 1px rgba(99, 114, 130, 0.16), 0 8px 16px rgba(27, 39, 51, 0.08);
+  box-shadow: 0 0 0 1px rgba(99, 114, 130, 0.16),
+    0 8px 16px rgba(27, 39, 51, 0.08);
   border: none;
   padding: 10px 20px;
   right: 30px;
@@ -110,5 +133,7 @@
     right: 0;
   }
 
-  #titlesticky { display: none; }
+  #titlesticky {
+    display: none;
+  }
 }

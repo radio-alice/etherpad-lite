@@ -4,13 +4,13 @@
   margin: 0;
   background-color: white !important;
   background: none;
-  border: 1px solid #d2d2d2
+  border: 1px solid var(--lp);
 }
 
 .toolbar .buttonicon {
   background-color: transparent;
   font-size: 14px;
-  color: #767676;
+  color: var(--mb);
 }
 
 .toolbar ul li.separator {
@@ -20,7 +20,7 @@
   margin: 0 10px;
   margin-right: 6px;
   height: 39px;
-  background-color: rgba(78, 85, 92, 0.22);
+  background-color: var(--lp);
 }
 
 .toolbar.condensed ul li {
@@ -41,22 +41,22 @@
 .toolbar ul li a:hover,
 .toolbar ul li a.selected,
 .toolbar ul li a:focus {
-  background: none !important; 
+  background: none !important;
   border-radius: 0;
 }
 
 .toolbar ul li a:hover {
-  background:#f7f7f7!important
+  background: #f7f7f7 !important;
 }
 
 .toolbar ul li a.selected,
 .toolbar ul li a:focus {
-   background: #eaeaea!important;
+  background: #eaeaea !important;
 }
 
 .toolbar ul li select {
   border: none;
-  border-bottom: 1px solid #d7d8da;
+  border-bottom: 1px solid var(--lb);
   border-radius: 0;
   width: 90px;
   margin-top: 5px;
@@ -75,7 +75,7 @@
   padding: 0;
 }
 
-.toolbar ul li[data-key=showusers] a {
+.toolbar ul li[data-key='showusers'] a {
   margin: 0;
   height: 59px;
   line-height: 25px;
@@ -91,13 +91,13 @@
     display: block;
   }
 
-  .toolbar ul li[data-key=showusers] a {
+  .toolbar ul li[data-key='showusers'] a {
     margin-left: 0 !important;
   }
 }
 
 @media (max-width: 720px) {
-.toolbar ul {
+  .toolbar ul {
     height: 39px;
     background: none;
     background-color: transparent;
@@ -113,33 +113,40 @@
     padding-left: 8px !important;
     padding-top: 8px !important;
     height: 35px !important;
-    border-top: 1px solid #d2d2d2 !important;
+    border-top: 1px solid var(--lp) !important;
     background-color: white;
   }
   .toolbar ul li a {
     padding: 4px 5px !important;
   }
 
-  .toolbar ul li[data-key=showusers] {
+  .toolbar ul li[data-key='showusers'] {
     position: absolute;
     right: 0;
     top: 0;
   }
-  .toolbar ul li[data-key=showusers] a {
+  .toolbar ul li[data-key='showusers'] a {
     padding-top: 9px !important;
   }
-  .toolbar ul li a:hover { background-color: transparent; }
+  .toolbar ul li a:hover {
+    background-color: transparent;
+  }
 
-  #connectivity, #embed, #import_export, #settings { bottom: 42px; }
+  #connectivity,
+  #embed,
+  #import_export,
+  #settings {
+    bottom: 42px;
+  }
 
   li.superscript,
   li.subscript,
-  li[data-key="undo"],
-  li[data-key="redo"] {
+  li[data-key='undo'],
+  li[data-key='redo'] {
     display: none;
   }
 
-  .toolbar ul li.separator { margin: 0; }
+  .toolbar ul li.separator {
+    margin: 0;
+  }
 }
-
-
